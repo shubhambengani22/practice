@@ -4,14 +4,14 @@ Total Problems Solved:
 
 | Topic            | Number of Problems |
 |------------------|--------------------|
-| Array            | 18                 |
-| Backtracking     | 3                  |
-| DP               | 10                 |
-| Greedy           | 7                  |
-| Implementation   | 2                  |
-| Misc             | 6                  |
-| Practice.Sorting | 2                  |
-| Practice.Trees   | 13                 |
-| Stack            | 5                  |
-| String           | 1                  |
-| **Total**        | **67**             |
+| Array            |                    |
+| Backtracking     |                    |
+| DP               |                    |
+| Greedy           |                    |
+| Implementation   |                    |
+| Misc             |                    |
+| Practice.Sorting |                    |
+| Practice.Trees   |                    |
+| Stack            |                    |
+| String           |                    |
+| **Total**        |                    |

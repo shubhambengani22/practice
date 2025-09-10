@@ -1,5 +1,0 @@
-o_p = [
-    True,
-    True,
-    False
-]
