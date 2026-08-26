@@ -19,11 +19,11 @@ def main():
     topic = args.topic
 
     # Create problem file
-    py_file_name = f"D:\Work\practice\src\\{topic}\\{name}.py"
-    open(py_file_name, 'a').close()
+    py_file_name = f"C:\\Users\\User\\Documents\\Interview Prep\\practice\\src\\{topic}\\{name}.py"
+    open(py_file_name, 'w').close()
 
     # Create directory for ip & op
-    dir_path = f"D:\Work\practice\src\\res\\{topic}\\{name}\\"
+    dir_path = f"C:\\Users\\User\\Documents\\Interview Prep\\practice\src\\res\\{topic}\\{name}\\"
     os.makedirs(os.path.dirname(dir_path), exist_ok=True)
 
     # Create input and output files
