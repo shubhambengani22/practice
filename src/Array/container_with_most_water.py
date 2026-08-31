@@ -1,11 +1,11 @@
 """
-You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the
-ith line are (i, 0) and (i, height[i]).
-Find two lines that together with the x-axis form a container, such that the container contains the most water.
-Return the maximum amount of water a container can store.
-Notice that you may not slant the container.
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
 
-Examples -
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return the maximum amount of water a container can store.
+
+Notice that you may not slant the container.
 
 Example 1:
 Input: height = [1,8,6,2,5,4,8,3,7]
@@ -16,10 +16,9 @@ Example 2:
 Input: height = [1,1]
 Output: 1
 """
-
 from src.res.Array.container_with_most_water import input as ip, output as op
-from typing import List
 from validator import are_two_arrays_same
+from typing import List
 
 
 def solve():
@@ -27,11 +26,11 @@ def solve():
     The solution of the program
     :return: None
     """
-    arr = ip.i_p
+    input = ip.i_p
     results = []
 
-    for n in arr:
-        results.append(max_area(n))
+    for arr in input:
+        results.append(two_pointer(arr))
     print(results)
 
     if not are_two_arrays_same(results, op.o_p):
@@ -41,26 +40,16 @@ def solve():
         print('Your output:', results)
 
 
-def max_area(height: List[int]) -> int:
-    """
-    This function finds maximum area of water that.
-    can be held inside the container
-    Approach: 2-pointer
-    Args:
-        height: The height of the lines forming the container
-    Returns:
-        int: maximum area
-    """
+def two_pointer(height: List[int]) -> int:
     n = len(height)
-    l, r = 0, n-1
+    i, j = 0, n - 1
+    max_area = 0
 
-    maxarea = 0
-
-    while l <= r:
-        maxarea = max(maxarea, min(height[l], height[r]) * (r - l))
-        if height[l] < height[r]:
-            l += 1
+    while i < j:
+        area = min(height[i], height[j]) * (j - i)
+        max_area = max(max_area, area)
+        if height[i] > height[j]:
+            j -= 1
         else:
-            r -= 1
-
-    return maxarea
+            i += 1
+    return max_area

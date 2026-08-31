@@ -4,7 +4,9 @@ from src.Array import (
     longest_common_prefix, 
     buy_sell_stock,
     maximum_subarray,
-    pivot_index
+    pivot_index,
+    product_of_array_except_self,
+    subarray_sum_equals_k
 )
 
 if __name__ == '__main__':
@@ -14,4 +16,6 @@ if __name__ == '__main__':
     # longest_common_prefix.solve()
     # buy_sell_stock.solve()
     # maximum_subarray.solve()
-    pivot_index.solve()
+    # pivot_index.solve()
+    # product_of_array_except_self.solve()
+    subarray_sum_equals_k.solve()
