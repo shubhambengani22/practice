@@ -1,5 +1,6 @@
 import argparse
 import os
+import sys
 
 
 def main():
@@ -12,6 +13,10 @@ def main():
 
     parser.add_argument("--name", type=str, help="Name of the problem separated by underscore.")
     parser.add_argument("--topic", type=str, choices=topic_choices, help="Topic name to create file and dir in")
+
+    if len(sys.argv) < 2:
+        parser.print_help(sys.stderr)
+        sys.exit(1)
 
     args = parser.parse_args()
 

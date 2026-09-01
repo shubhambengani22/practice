@@ -6,7 +6,8 @@ from src.Array import (
     maximum_subarray,
     pivot_index,
     product_of_array_except_self,
-    subarray_sum_equals_k
+    subarray_sum_equals_k,
+    valid_paranthesis
 )
 
 if __name__ == '__main__':
@@ -18,4 +19,5 @@ if __name__ == '__main__':
     # maximum_subarray.solve()
     # pivot_index.solve()
     # product_of_array_except_self.solve()
-    subarray_sum_equals_k.solve()
+    # subarray_sum_equals_k.solve()
+    valid_paranthesis.solve()
