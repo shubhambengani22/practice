@@ -9,7 +9,7 @@ def main():
     The topic should be within choices set
     """
     parser = argparse.ArgumentParser()
-    topic_choices = ["Array"]
+    topic_choices = ["Array", "Linked_List"]
 
     parser.add_argument("--name", type=str, help="Name of the problem separated by underscore.")
     parser.add_argument("--topic", type=str, choices=topic_choices, help="Topic name to create file and dir in")
