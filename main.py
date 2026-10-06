@@ -7,7 +7,12 @@ from src.Array import (
     pivot_index,
     product_of_array_except_self,
     subarray_sum_equals_k,
-    valid_paranthesis
+    valid_paranthesis,
+    daily_temperatures,
+    search_insert_position,
+    sqrtx,
+    search_in_sorted_rotated_array,
+    koko_eating_bananas
 )
 
 if __name__ == '__main__':
@@ -20,4 +25,9 @@ if __name__ == '__main__':
     # pivot_index.solve()
     # product_of_array_except_self.solve()
     # subarray_sum_equals_k.solve()
-    valid_paranthesis.solve()
+    # valid_paranthesis.solve()
+    # daily_temperatures.solve()
+    # search_insert_position.solve()
+    # sqrtx.solve()
+    # search_in_sorted_rotated_array.solve()
+    koko_eating_bananas.solve()
