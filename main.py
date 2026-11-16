@@ -12,7 +12,8 @@ from src.Array import (
     search_insert_position,
     sqrtx,
     search_in_sorted_rotated_array,
-    koko_eating_bananas
+    koko_eating_bananas,
+    contains_nearby_duplicate
 )
 
 if __name__ == '__main__':
@@ -30,4 +31,5 @@ if __name__ == '__main__':
     # search_insert_position.solve()
     # sqrtx.solve()
     # search_in_sorted_rotated_array.solve()
-    koko_eating_bananas.solve()
+    # koko_eating_bananas.solve()
+    contains_nearby_duplicate.solve()
